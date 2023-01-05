@@ -1,0 +1,30 @@
+{
+ "translation": {
+  "auth": {
+   "login": {
+    "title": "Login Page"
+   },
+   "signup": {
+    "title": "Signup Page"
+   }
+  },
+  "header": {
+   "title": "TopLearn"
+  },
+  "home": {
+   "title": "Home Page"
+  },
+  "courses": {
+   "title": "List All Courses Page",
+   "single": {
+    "title": "Single Courses Page"
+   }
+  },
+  "blogs": {
+   "title": "List All Blogs Page",
+   "single": {
+    "title": "Single Blogs Page"
+   }
+  }
+ }
+}
