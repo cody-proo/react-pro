@@ -1,24 +1,22 @@
-import { Button, TextField } from '@mui/material';
+import { Grid } from '@mui/material';
 import HelmetContainer from '../../containers/HelmetContainer';
 import { HOME_TITLE } from '../../core/languages/keys';
-import { useLanguage } from '../../hooks/useLanguage';
-import { useColorScheme } from '../../hooks/useColorScheme';
+import CoursesLanding from '../../components/home/CoursesLanding';
+import TeachersContainer from '../../components/home/TeachersContainer';
+import CoursesContainer from '../../components/home/CoursesContainer';
 
 const HomePage: React.FC = () => {
- const { t, changeLanguage } = useLanguage();
- const { setColorScheme } = useColorScheme();
  return (
   <HelmetContainer title={HOME_TITLE}>
-   <p>{t('hi')}</p>
-   <Button
-    onClick={() =>
-     setColorScheme((prev) => (prev === 'light' ? 'dark' : 'light'))
-    }
-   >
-    Change Color
-   </Button>
-   <button onClick={() => changeLanguage()}>change language</button>
-   <TextField placeholder="salam" />
+   <CoursesLanding />
+   <Grid my={3} container spacing={2}>
+    <Grid item xs={9}>
+     <CoursesContainer />
+    </Grid>
+    <Grid item xs={3}>
+     <TeachersContainer />
+    </Grid>
+   </Grid>
   </HelmetContainer>
  );
 };

@@ -66,6 +66,7 @@ const LoginPage = () => {
         (formState?.errors as any)[loginInput.name]?.message as string
        }
        registerRef={register(loginInput.name as any)}
+       
       />
      ))}
     </FormGroup>

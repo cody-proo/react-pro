@@ -5,6 +5,8 @@ const items = [
  { to: '/', text: 'Home', icon: <FaHome /> },
  { to: '/courses', text: 'Courses', icon: <FaHome /> },
  { to: '/blogs', text: 'Blogs', icon: <FaHome /> },
+ { to: '/signup', text: 'Signup', icon: <FaHome /> },
+ { to: '/login', text: 'Login', icon: <FaHome /> },
 ];
 
 const Header: React.FC = () => {
